@@ -4,23 +4,31 @@ import Icon from './Icon.astro';
 
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Full Stack</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+		<h2>Languages/Framework</h2>
+		<ul>
+			<li>React.js</li>
+			<li>Typescript</li>
+			<li>Javascript(ES6)</li>
+		</ul>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Industry Leader</h2>
-		<p>Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.</p>
+		<h2>State Manager</h2>
+		<ul>
+			<li>Redux</li>
+			<li>Context API</li>
+		</ul>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Strategy-Minded</h2>
-		<p>Urna porttitor rhoncus dolor purus non enim praesent ornare.</p>
+		<h2>Style</h2>
+		<ul>
+			<li>SASS/CSS</li>
+			<li>Styled-Components</li>
+		</ul>
 	</div>
 </section>
 
 <style>
+
 	.box {
 		border: 1px solid var(--gray-800);
 		border-radius: 0.75rem;
@@ -39,8 +47,8 @@ import Icon from './Icon.astro';
 		font-size: var(--text-lg);
 	}
 
-	.skills p {
-		color: var(--gray-400);
+	.skills ul li {
+		font-size: var(--text-lg)
 	}
 
 	@media (min-width: 50em) {
